@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <title>스파르타코딩클럽 | 부트스트랩 연습하기</title>
+    <link href="https://fonts.googleapis.com/css?family=Stylish&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+        * {
+            font-family: 'Stylish', sans-serif;
+        }
+
+        .login-box {
+            background-image: url("https://image.auction.co.kr/itemimage/19/65/60/19656065b6.jpg");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            width: 500px;
+            height: 300px;
+            border-radius: 10px;
+            padding-top: 40px;
+        }
+
+        .wrap {
+            width: 500px;
+            margin: 10px auto;
+        }
+
+        .box1 {
+            padding: 5px;
+            float: left;
+        }
+
+        .box2 {
+            padding: 15px;
+            float: left;
+        }
+
+        .box3 {
+            clear: both;
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+
+    </style>
+    <script>
+        function button() {
+            alert('주문이 완료되었습니다');
+
+            // 여기에 코드를 작성하세요.
+        }
+    </script>
+
+</head>
+
+<body>
+
+<div class="wrap">
+    <div class="login-box">
+    </div>
+
+    <div class="box1">
+        <h2>에어조던을 팝니다</h2>
+    </div>
+    <div class="box2">
+        <h5>가격: 22,5000원 / 개</h5>
+    </div>
+
+    <div class="box3">
+        <p>이 상품은 최상급이에요. 미국에서 직수입하고 있어요. 편안한 착용감과 뛰어난 플레이를 위한 최고의 신발이 되어줄 거에요!</p>
+    </div>
+
+    <form>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">주문자 성함:</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1">
+        </div>
+        <form class="form-inline">
+            <label class="my-1 mr-2" for="inlineFormCustomSelectPref">수량:</label>
+            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                <option selected>--수량을 선택하세요--</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+
+            <div class="form-group">
+                <label for="exampleFormControlInput1">주소:</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">전화번호:</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div class="button">
+                <button onclick="button()" type="button" class="btn btn-primary">주문하기</button>
+            </div>
+        </form>
+    </form>
+</div>
+</body>
+
+</html>
